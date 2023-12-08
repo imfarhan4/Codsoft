@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Webpage Design</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-<div class="container">
-    <div class="Calculator">
-        <form>
-            <div class="display">
-                <input type="text" name="display">
-            </div>
-            <div>
-               <input type="button" value="AC" onclick="display.value = ''" class="operator">
-               <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
-               <input type="button" value="." onclick="display.value = '.'" class="operator">
-               <input type="button" value="/" onclick="display.value = '/'" >
-            </div>
-            <div>
-                <input type="button" value="7" onclick="display.value += '7'">
-                <input type="button" value="8" onclick="display.value += '8'">
-                <input type="button" value="9" onclick="display.value += '9'">
-                <input type="button" value="*" onclick="display.value += '*'" class="operator">
-             </div>
-             <div>
-                <input type="button" value="4" onclick="display.value += '4'">
-                <input type="button" value="5" onclick="display.value += '5'">
-                <input type="button" value="6" onclick="display.value += '6'">
-                <input type="button" value="-" onclick="display.value += '-'" class="operator">
-             </div>
-             <div>
-                <input type="button" value="1" onclick="display.value += '1'">
-                <input type="button" value="2" onclick="display.value += '2'">
-                <input type="button" value="3" onclick="display.value += '3'">
-                <input type="button" value="+" onclick="display.value += '+'" class="operator">
-             </div>
-             <div>
-                <input type="button" value="00" onclick="display.value += '00'">
-                <input type="button" value="0" onclick="display.value += '0'">
-                <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal" class="operator">
-                
-             </div>
-        </form>
+  <div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">F Tech</h2>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type To text">
+            <a href="#"><button class="btn">Search</button></a>
+        </div>
+
     </div>
-</div>    
+        <div class="content">
+            <h1>Web Design & <br><span>Devolopment</span> <br>Course</h1>
+            <p class="par">Create visually stunning websites, from design to implementation using HTML, 
+                <br>  CSS, and JavaScript.Collaborate with clients and cross-functional teams to ensure seamless 
+                <br>user experiences. Optimize and troubleshoot websites for performance and functionality.</p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">Login</a></button>
+
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+        </div> 
+    </div> 
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
