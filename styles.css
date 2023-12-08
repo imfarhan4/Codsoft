@@ -1,93 +1,56 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
-.hero{
-    position: relative;
+
+.container{
     width: 100%;
     height: 100vh;
-    background: #eff4fd;
-}
-
-nav{
+    background: #e3f9ff;
     display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+.Calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
 
 }
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
 }
-nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
 }
-nav ul li a:hover{
-    color: red;
-    
-}
-.detel{
-    margin-left: 8%;
-    margin-top: 13%;
-}
-.detel h1{
-    font-size: 50px;
-    color: #212121;
-    margin-bottom: 20px;
-}
-
-
-span{
-    color: orange;
-}
-
-.detel p{
-    color: #555;
-    line-height: 20px;  
-}
-
-.detel a{
-    background: #212121;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;color: #fff;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 5px;
+form input.equal{
+    width: 145px;
 }
 
 
-.images{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 10px;
+
+form input.operator{
+    color: #33ffd8;
+
 }
-
-.images img{
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
-    }
-
-    .images:hover .shape{
-        bottom: 40px;
-    }
-
-    .images:hover .farhan{
-        left: 45%;  
-    }
